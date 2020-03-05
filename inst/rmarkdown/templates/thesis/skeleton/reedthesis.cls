@@ -197,20 +197,8 @@
 \def\@degree{\@latex@warning@no@line{No \noexpand\degree given}}
 \def\institution#1{\gdef \@institution{#1}}
 \def\@institution{\@latex@warning@no@line{No \noexpand\institution given}}
-\def\division#1{\gdef \@division{#1}}
-\def\@division{\@latex@warning@no@line{No \noexpand\division given}}
-\def\department#1{\gdef \@department{#1}}
-\def\@department{\@latex@warning@no@line{No \noexpand\department given}}
-\def\thedivisionof#1{\gdef \@thedivisionof{#1}}
-\def\@thedivisionof{The Division of}
-\def\approvedforthe#1{\gdef \@approvedforthe{#1}}
-\def\@approvedforthe{Division}
-\def\advisor#1{\gdef \@advisor{#1}}
-\def\@advisor{\@latex@warning@no@line{No \noexpand\advisor given}}
-\def\altadvisor#1{\gdef \@altadvisor{#1} \@altadvisortrue}
-\global\let\@altadvisor\@empty
-\newif\if@altadvisor
-\@altadvisorfalse
+\def\programname#1{\gdef \@programname{#1}}
+\def\@programname{\@latex@warning@no@line{No \noexpand\programname given}}
 
 \renewcommand\l@chapter[2]{%
   \ifnum \c@tocdepth >\m@ne
@@ -294,55 +282,51 @@
   \let \footnote \thanks
 
   \baselineskip = 1.4\baselineskip
-  \setbox0=\hbox{of the Requirements for the Degree}
+  \setbox0=\hbox{IN PARTIAL FULFILLMENT OF THE REQUIREMENTS}
 
   \begin{center}
     \setcounter{page}{1}
     \null\vfil
-    {\fontsize{12}{14}\selectfont \@title}
-    \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
-    \vfil
-    A Thesis \\
-    Presented to \\
-    \@thedivisionof \ \@division \\
     \@institution
     \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
+    \@title
     \vfil
-    In Partial Fulfillment \\
-    of the Requirements for the Degree \\
+    A DISSERTATION
+    \vfil
+    SUBMITTED TO THE GRADUATE SCHOOL \\
+    IN PARTIAL FULFILLMENT OF THE REQUIREMENTS
+    \vfil
+    for the degree
+    \vfil
     \@degree
     \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
-    \bigskip
-    \centerline{}
-    \bigskip
-    {\fontsize{12}{14}\selectfont \lineskip .75em
-    \begin{tabular}[t]{c}%
-      \@author
-    \end{tabular}\par}
-    \vskip 1.5em
-    {\fontsize{12}{14}\selectfont \@date \par}
+    Field of \@programname
+    \vfil
+    By \\
+    \@author
+    \vfil
+    EVANSTON, ILLINOIS
+    \vfil
+    \@date
   \end{center}\par
   \end{titlepage}
 
 %% Approved for the division page
-  \cleardoublepage
-  {\fontsize{12}{14}
-  \setbox0=\hbox{Approved for the \@approvedforthe}
-  \thispagestyle{empty}
-  \null\vfil		% just below center of page
-  \par\vskip 6cm	% below center, not center
-  \centerline{\copy0}	% approved
-  \centerline{(\@department)} %major
-  \vskip 1cm		%space to sign
-  \centerline{\makebox[\wd0][c]{\hrulefill}
-	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\hrulefill} \fi}
-  \centerline{\makebox[\wd0][c]{\@advisor}
-	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\@altadvisor} \fi}
-  \par\vfil\null}
-  \cleardoublepage
+%   \cleardoublepage
+%   {\fontsize{12}{14}
+%   \setbox0=\hbox{Approved for the \@approvedforthe}
+%   \thispagestyle{empty}
+%   \null\vfil		% just below center of page
+%   \par\vskip 6cm	% below center, not center
+%   \centerline{\copy0}	% approved
+%   \centerline{(\@department)} %major
+%   \vskip 1cm		%space to sign
+%   \centerline{\makebox[\wd0][c]{\hrulefill}
+% 	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\hrulefill} \fi}
+%   \centerline{\makebox[\wd0][c]{\@advisor}
+% 	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\@altadvisor} \fi}
+%   \par\vfil\null}
+%   \cleardoublepage
   }
 }
 

@@ -1,14 +1,12 @@
 ---
 author: 'Your R. Name'
-date: 'May 20xx'
-institution: 'Reed College'
-division: 'Mathematics and Natural Sciences'
-advisor: 'Advisor F. Name'
+date: 'June 2020'
+institution: 'NORTHWESTERN UNIVERSITY'
+programname: 'Sociology'
 # If you have more two advisors, un-silence line 7
 #altadvisor: 'Your Other Advisor'
-department: 'Mathematics'
-degree: 'Bachelor of Arts'
-title: 'My Final College Paper'
+degree: 'DOCTOR OF PHILOSOPHY'
+title: 'Dissertation Title in Title Case'
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
