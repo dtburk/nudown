@@ -1,14 +1,12 @@
-Package: thesisdown
-Title: An updated R Markdown thesis template using the bookdown package
+Package: nudown
+Title: An R Markdown thesis template for The Graduate School at Northwestern 
+    University using the bookdown package
 Version: 0.0.3
 Authors@R: c(
-    person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = "cre"),
-    person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"))
-Description: Using the bookdown package and LaTeX and Word thesis templates from
-    Reed College, this package aims to encourage reproducible research using
-    simple Markdown syntax while embedding all of the R code to produce plots
-    and analyses as well.
-Maintainer: Chester Ismay <chester.ismay@gmail.com>
+    person("Derek", "Burk", email = "burkx031@umn.edu", role = "cre"))
+Description: This package adapts the thesisdown package to fit the dissertation 
+    formatting requirements of The Graduate School at Northwestern University.
+Maintainer: Derek Burk <burkx031@umn.edu>
 Depends:
     R (>= 3.2.0),
     remotes,
