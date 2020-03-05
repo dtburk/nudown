@@ -10,6 +10,7 @@
 % May 2005 Patrick Carlisle Table of contents chapter definition
 % 2004-2005 Ben Salzberg (BTS) a variety of tweaks here and in the template
 % 2015 Chester Ismay (CII) modified to create R Markdown template
+% 2020 Derek Burk (DTB) modified for The Graduate School at Northwestern Univ.
 %
 % Oddities:
 %
@@ -101,6 +102,9 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 % End of CII add
 
+% DTB 2020: 1 inch margins all around
+\usepackage[margin=1in]{geometry}
+
 % This gives us rules below the headers
 \AtBeginDocument{%
   \fancyhf{}
@@ -174,13 +178,14 @@
 \renewcommand{\cleardoublepage}{\RTcleardoublepage}
 
 % adjust margins for binding  (changed 2007-04-24 tgp)
-\setlength{\oddsidemargin}{.5in}
-\setlength{\evensidemargin}{0in}
-\setlength{\textwidth}{6.0in}
-\setlength{\textheight}{9.0in}
-\setlength\topmargin{0in}
-\addtolength\topmargin{-\headheight}
-\addtolength\topmargin{-\headsep}
+% DTB 2020: commented out margin stuff
+% \setlength{\oddsidemargin}{.5in}
+% \setlength{\evensidemargin}{0in}
+% \setlength{\textwidth}{6.0in}
+% \setlength{\textheight}{9.0in}
+% \setlength\topmargin{0in}
+% \addtolength\topmargin{-\headheight}
+% \addtolength\topmargin{-\headsep}
 
 %\setlength{\oddsidemargin}{.6in}
 %\setlength{\evensidemargin}{0in}
@@ -272,6 +277,8 @@
 % I hacked the title page to all be the same font size
 % as requested by the library, BTS 2005
 
+% DTB 2020: Modified content and formatting of title page
+
 \renewcommand{\maketitle}{%
   {\pagestyle{empty}
   \fontsize{12}{14}\selectfont
@@ -310,6 +317,8 @@
     \@date
   \end{center}\par
   \end{titlepage}
+
+% DTB 2020: commented out division page stuff
 
 %% Approved for the division page
 %   \cleardoublepage
