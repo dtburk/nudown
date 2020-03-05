@@ -1,4 +1,4 @@
-name:  Thesis
+name:  NU-Thesis
 description: >
- Template for creating a Senior Thesis at Reed College using R Markdown based on the Reed College LaTeX and Word templates and the R bookdown package.
+ Template for creating a dissertation for The Graduate School at Northwestern University using R Markdown based on an adapted version of the Reed College LaTeX templates and the R bookdown package.
 
