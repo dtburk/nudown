@@ -66,8 +66,11 @@
 \captionsetup{width=5in}
 % End of CII addition
 
-%% DTB 2020: for copyright symbol, stolen from huskydown template
+% DTB 2020: for copyright symbol, stolen from huskydown template
 \usepackage{textcomp}
+
+% DTB 2020: for page numbers in upper right corner
+\usepackage{fancyhdr}
 
 % \usepackage{times} % other fonts are available like times, bookman, charter, palatino
 
@@ -168,7 +171,10 @@ $if(title)$
   \maketitle
 $endif$
 
-\pagestyle{fancyplain} % turns page numbering back on
+\pagestyle{fancy} % turns page numbering back on
+\renewcommand{\headrulewidth}{0pt} % no horizontal rule in header
+\fancyhead[R]{\thepage}
+\fancyhead[L,C]{}
 
 % DTB 2020: add copyright page
 $if(includecopyright)$

@@ -103,7 +103,8 @@
 % End of CII add
 
 % DTB 2020: 1 inch margins all around
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=1in,includehead]{geometry} % includehead ensures page numbers
+                                              % conform to the margins
 
 % This gives us rules below the headers
 \AtBeginDocument{%
