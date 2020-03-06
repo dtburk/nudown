@@ -160,10 +160,15 @@ $endfor$
 
 \begin{document}
 
+\mainmatter % here the regular arabic numbering starts
+\pagestyle{empty} % this removes page numbers from the title page
+
 % Everything below added by CII
 $if(title)$
   \maketitle
 $endif$
+
+\pagestyle{fancyplain} % turns page numbering back on
 
 % DTB 2020: add copyright page
 $if(includecopyright)$
@@ -176,8 +181,8 @@ $if(abstract)$
   \end{abstract}
 $endif$
 
-\frontmatter % this stuff will be roman-numbered
-\pagestyle{empty} % this removes page numbers from the frontmatter
+% \frontmatter % this stuff will be roman-numbered
+% \pagestyle{empty} % this removes page numbers from the frontmatter
 
 $if(acknowledgements)$
   \begin{acknowledgements}
@@ -189,6 +194,12 @@ $if(preface)$
   \begin{preface}
     $preface$
   \end{preface}
+$endif$
+
+$if(dedication)$
+  \begin{dedication}
+    $dedication$
+  \end{dedication}
 $endif$
 
 $if(toc)$
@@ -205,14 +216,6 @@ $if(lof)$
   \listoffigures
 $endif$
 
-$if(dedication)$
-  \begin{dedication}
-    $dedication$
-  \end{dedication}
-$endif$
-
-\mainmatter % here the regular arabic numbering starts
-\pagestyle{fancyplain} % turns page numbering back on
 
 $body$
 
