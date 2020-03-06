@@ -79,6 +79,10 @@
 \newcommand{\blandscape}{\begin{landscape}}
 \newcommand{\elandscape}{\end{landscape}}
 
+% DTB 2020: double-spacing
+\usepackage{setspace}
+\doublespacing
+
 % \usepackage{times} % other fonts are available like times, bookman, charter, palatino
 
 % Syntax highlighting #22
@@ -183,10 +187,14 @@ $endfor$
 \mainmatter % here the regular arabic numbering starts
 \pagestyle{empty} % this removes page numbers from the title page
 
+\begin{singlespace}
+
 % Everything below added by CII
 $if(title)$
   \maketitle
 $endif$
+
+\end{singlespace}
 
 \pagestyle{fancy} % turns page numbering back on
 \renewcommand{\headrulewidth}{0pt} % no horizontal rule in header
