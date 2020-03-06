@@ -74,7 +74,10 @@ Here is a reference to the Reed logo: Figure \@ref(fig:reedlogo).  Note the use 
 
 <!-- starts a new page and stops trying to place floats such as tables and figures -->
 
-Below we will investigate how to save the output of an **R** plot and label it in a way similar to that done above.  Recall the `flights` dataset from Chapter \@ref(rmd-basics).  (Note that we've shown a different way to reference a section or chapter here.)  We will next explore a bar graph with the mean flight departure delays by airline from Portland for 2014.  Note also the use of the `scale` parameter which is discussed on the next page.
+Below we will investigate how to save the output of an **R** plot and label it in a way similar to that done above.  Recall the `flights` dataset from Chapter \@ref(rmd-basics).  (Note that we've shown a different way to reference a section or chapter here.)  We will next explore a bar graph with the mean flight departure delays by airline from Portland for 2014.  Note also the use of the `scale` parameter which is discussed on the next page. Figure \@ref(fig:delaysboxplot) appears on its own page in landscape orientation, not for any good reason, but to test that the page number will still appear in the right place (the bottom right corner, so that if you flip the page back to portrait, the position and orientation of the page number will be the same on portrait and landscape pages).
+
+\newpage
+\blandscape
 
 ```{r delaysboxplot, warnings=FALSE, messages=FALSE, fig.cap="Mean Delays by Airline", fig.width=6}
 flights %>% group_by(carrier) %>%
@@ -82,6 +85,9 @@ flights %>% group_by(carrier) %>%
   ggplot(aes(x = carrier, y = mean_dep_delay)) +
   geom_bar(position = "identity", stat = "identity", fill = "red")
 ```
+
+\newpage
+\elandscape
 
 Here is a reference to this image: Figure \@ref(fig:delaysboxplot).
 
