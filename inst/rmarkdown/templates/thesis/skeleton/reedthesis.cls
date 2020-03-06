@@ -138,13 +138,14 @@
 }
 
 % Stolen from book.cls and modified
-\let\RToldchapter\chapter
-\renewcommand{\chapter}{\if@openright\RTcleardoublepage
-		    \else\clearpage\fi
-		    \thispagestyle{empty}%
-		    \global\@topnum\z@
-		    \@afterindentfalse
-		    \secdef\@chapter\@schapter}
+% DTB 2020: commented out to get page numbers on first page of chapter
+% \let\RToldchapter\chapter
+% \renewcommand{\chapter}{\if@openright\RTcleardoublepage
+% 		    \else\clearpage\fi
+% 		    \thispagestyle{empty}%
+% 		    \global\@topnum\z@
+% 		    \@afterindentfalse
+% 		    \secdef\@chapter\@schapter}
 
 % Stolen from book.cls PBC 5/12/05
 % Using this to actually show "Chapter 1" in TOC instead of "1"
