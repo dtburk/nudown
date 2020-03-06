@@ -204,6 +204,8 @@
 \def\@institution{\@latex@warning@no@line{No \noexpand\institution given}}
 \def\programname#1{\gdef \@programname{#1}}
 \def\@programname{\@latex@warning@no@line{No \noexpand\programname given}}
+\def\copyrightyear#1{\gdef \@copyrightyear{#1}}
+\def\@copyrightyear{\@latex@warning@no@line{No \noexpand\copyrightyear given}}
 
 \renewcommand\l@chapter[2]{%
   \ifnum \c@tocdepth >\m@ne
@@ -351,3 +353,12 @@
 \newcommand{\Dedication}[1]{\def\@Dedication{#1}}
 \newcommand{\Preface}[1]{\def\@Preface{#1}}
 % End of CII add
+
+% DTB 2020: Copyright page stolen from huskydown package and modified
+\def\copyrightpage{                   % Prints the copyright page
+    \hspace{0pt}
+    \vfill
+    \textcopyright \: Copyright \@author \: \@copyrightyear
+    \par
+    All Rights Reserved
+}

@@ -1,4 +1,4 @@
-name:  NU-Thesis
+name: NU-Thesis
 description: >
  Template for creating a dissertation for The Graduate School at Northwestern University using R Markdown based on an adapted version of the Reed College LaTeX templates and the R bookdown package.
 

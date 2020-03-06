@@ -66,6 +66,9 @@
 \captionsetup{width=5in}
 % End of CII addition
 
+%% DTB 2020: for copyright symbol, stolen from huskydown template
+\usepackage{textcomp}
+
 % \usepackage{times} % other fonts are available like times, bookman, charter, palatino
 
 % Syntax highlighting #22
@@ -87,6 +90,10 @@ $if(altadvisor)$
 \altadvisor{$altadvisor$}
 $endif$
 % End of CII addition
+
+% DTB 2020: copyright year for optional copyright page
+\copyrightyear{$copyrightyear$}
+
 
 %%% Remember to use the correct department!
 % \department{$department$}
@@ -156,6 +163,11 @@ $endfor$
 % Everything below added by CII
 $if(title)$
   \maketitle
+$endif$
+
+% DTB 2020: add copyright page
+$if(includecopyright)$
+  \copyrightpage
 $endif$
 
 \frontmatter % this stuff will be roman-numbered

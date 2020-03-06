@@ -7,6 +7,8 @@ programname: 'Sociology'
 #altadvisor: 'Your Other Advisor'
 degree: 'DOCTOR OF PHILOSOPHY'
 title: 'Dissertation Title in Title Case'
+includecopyright: true
+copyrightyear: '2020'
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
