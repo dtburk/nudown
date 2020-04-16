@@ -1,4 +1,12 @@
-# thesisdown
+# nudown
+
+This package was adapted from the packages [thesisdown](https://github.com/ismayc/thesisdown) 
+and [huskydown](https://github.com/benmarwick/huskydown), with revisions made to 
+create a bookdown template that conforms to the dissertation formatting 
+requirements of The Graduate School at Northwestern University, as described 
+[here](https://www.tgs.northwestern.edu/documents/policies/dissertation-format-guidelines.pdf).
+Below, I have included the more detailed description of this template from the 
+[thesisdown](https://github.com/ismayc/thesisdown) package:
 
 This project was inspired by the [bookdown](https://github.com/rstudio/bookdown) package and is an updated version of my Senior Thesis template in the `reedtemplates` package [here](https://github.com/ismayc/reedtemplates). It was originally designed to only work with the Reed College LaTeX template, but has since been adapted to work with many different institutions by many different individuals. Check out the [**Customizing thesisdown to your institution**](https://github.com/ismayc/thesisdown#customizing-thesisdown-to-your-institution) section below for examples.
 
